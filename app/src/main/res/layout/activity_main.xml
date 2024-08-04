@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/conversor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Conversor de Moedas Euro - Dólar "
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Digite o valor "
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <RadioButton
+                android:id="@+id/radio_dolar"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:text="Dólar"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radio_euro"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:text="Euro"
+                android:textColor="@color/black"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_converter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Converter"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</LinearLayout>
